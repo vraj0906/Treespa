@@ -1,0 +1,532 @@
+html {
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*-------Navigation-------*/
+
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.navbar-brand img {
+	height: 60px;
+	padding-left: 30px;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+.navbar-nav li a {
+	float: right;
+	text-align: left;
+}
+
+#nav-bar ul li a:hover {
+	color: #007bff!important;
+}
+
+.navbar {
+	background: #fff;
+}
+
+.navbar-toggler {
+	border: none!important;
+}
+
+.nav-link {
+	color: #555!important;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+#slider {
+	width: 100%;
+	height: auto;
+}
+
+.carousel-caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 2rem;
+	color: #fff;
+	padding-top: 20px;
+}
+
+@media screen and (min-width:748px){
+	.carousel-caption{
+		font-size: 3.5rem;
+	}
+}
+
+/*---------------------About------------------*/
+
+#about {
+	padding: 50px 50px;
+	color: 555;
+}
+
+.about-content h2 {
+	font-family: "Times New Roman";
+}
+
+.about-content {
+	padding-top: 20px;
+}
+
+#about .btn {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.skills-bar p {
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.progress-bar {
+	border-radius: 16px;
+}
+
+.progress {
+	border-radius: 16px !important;
+	margin-bottom: 20px;
+}
+
+/*----------------services--------------*/
+
+#services {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/pink-mountain-bg.jpg");
+	background-position: center;
+	color: #efefef;
+	margin-top: 40px;
+}
+
+#services h1 {
+	text-align: center;
+}
+
+#services h1::after {
+	color: #111111;
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 100px;
+	margin: 20px auto 5px;
+}
+
+.icon {
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 20px height:80px;
+	width: 80px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+#services p {
+	font-size: 14px;
+	margin-top: 20px;
+	color: #ccc;
+}
+
+.services .cards{
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+
+.services .cards:hover {
+	background: #000;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/*------------------Team Members---------------*/
+
+#team {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+
+#team h1 {
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+}
+
+h1::after {
+	content: '';
+	background: #555;
+	display: block;
+	height: 3px;
+	width: 100px;
+	margin: 20px auto
+}
+
+.profile-pic {
+	margin-top: 25px;
+}
+
+.profile-pic .img-box {
+	opacity: 1;
+	display: block;
+	position: relative;
+	filter: grayscale(1);
+}
+
+.profile-pic .img-box img {
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+
+.profile-pic .img-box:hover {
+	filter: grayscale(0);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.profile-pic h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #007bff !important;
+}
+
+.profile-pic h3 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+#team .fa {
+	height: 25px;
+	width: 25px;
+	color: #007bff !important;
+	background: #d3d3d3;
+	padding: 4px;
+	border-radius: 50%;
+}
+
+.img-box ul {
+	padding: 15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+.img-box ul li {
+	padding: 5px;
+	display: inline-block;
+}
+
+.img-box:hover ul {
+	opacity: 1;
+}
+
+.img-box ul, .img-box ul li {
+	transition: all 0.3s ease;
+}
+
+.img-box ul, .img-box ul li:hover{
+	transition: all 0.3s ease;
+}
+
+/*-------------------promo--------------*/
+
+#promo {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/parallax-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 100px;
+	font-family: sans-serif;
+	font-size: 38px;
+}
+
+/*---------------price plans----------*/
+
+#price {
+	padding: 40px;
+	background: #efefef;
+}
+
+.single-price {
+	margin: 10px;
+	display: inline;
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+
+.single-price:hover {
+	box-shadow: 0 2px 20px #333;
+	transition: all 0.3s ease;
+}
+
+.price-head {
+	background-color: #2196f3;
+	display: inline;
+	float: left;
+	padding: 10px 5px;
+	text-align: center;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.price-head h2 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.price-head p {
+	font-size: 25px;
+	color: #000;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.ebook-price{
+	border-radius: 10px 10px 0 0;
+}
+
+.price-button{
+	border-radius: 0 0 10px 10px;
+}
+
+#price span {
+	font-size: 15px;
+}
+
+#price .container h1 {
+	text-align: center;
+}
+
+.price-content {
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 0 25px;
+}
+
+.price-content ul li {
+	border-bottom: 1px solid #efefef;
+	padding: 15px 10px;
+	list-style: none;
+}
+
+ul li:last-child {
+	border: none;
+}
+
+.price-button {
+	padding: 0 15px;
+}
+
+.fa-check-circle {
+	color: green;
+	margin-right: 10px;
+	font size: 20px;
+}
+
+.fa-times-circle {
+	color: red;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.price-button {
+	display: inline;
+	float: left;
+	padding: 15px 15px 30px;
+	text-align-last: center;
+	width: 100%;
+}
+
+.buy-btn {
+	background-color: #2196f3;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 50px;
+	transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+	border-collapse: 1px solid white;
+	background-color: #3f51b5;
+	transition: all 0.3s ease;
+}
+
+a {
+	text-decoration: none !important;
+	color: #fff !important;
+}
+
+/*----------------------Testimonails-----------------*/
+
+#Testimonials {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#Testimonials .row {
+	margin-top: 30px;
+}
+
+.col-md-4 {
+	margin: 70px auto;
+}
+
+.profile {
+	padding: 70px 10px 10px;
+	background-color: #efefef;
+	border-radius: 10px;
+}
+
+.user {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%
+}
+
+.profile img {
+	top: -60px;
+	position: absolute;
+	left: calc(50%-60px);
+	border: 10px solid #fff;
+}
+
+.profile h3 {
+	font-size: 20px;
+	margin-top: 15px;
+	color: #007bff;
+}
+
+#Testimonials .container h1 {
+	text-align: center;
+}
+
+#Testimonials span {
+	color: #333;
+	font-size: 12px;
+}
+
+blockquote {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+blockquote::before {
+	content: '\201C';
+	font-size: 50px;
+	color: #007bff;
+	position: relative;
+	line-height: 20px;
+	bottom: -15px;
+	right: 5px;
+}
+
+blockquote::after {
+	content: '\201d';
+	font-size: 50px;
+	color: #007bff;
+	position: relative;
+	line-height: 20px;
+	bottom: -15px;
+	left: 5px;
+}
+
+.profile{
+	transition: all 0.3s ease;
+}
+
+.profile:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/* -----------Get in Touch--------------*/
+
+#Contact {
+	background: #efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+}
+
+.Contact-form {
+	padding: 15px;
+}
+
+.form-control {
+	border-radius: 10px!important;
+	border: none !important;
+}
+
+.form-control::placeholder {
+	color: #999 !important;
+}
+
+.follow {
+	background: #fff;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.contact-info .fa {
+	margin: 10px;
+	color: #007bff;
+	font-weight: bold;
+}
+
+.contact-info a{
+	color: #000!important;
+	text-decoration: underline!important;
+}
+
+#Contact .container h1 {
+	text-align: center;
+	color: #111;
+}
+
+/*-------------Footer ------------------*/
+
+#footer {
+	background: #150517;
+	color: #fff;
+	padding: 12px;
+}
+
+i{
+	font-size: 110%!important;
+}
+
+.fa-heart {
+	margin: 3px;
+	color: red!important;
+}
+
