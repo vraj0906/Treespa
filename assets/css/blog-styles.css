@@ -2,9 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
-	{
+*{
 	margin: 0;
 	padding: 0;
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur850.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur850.png), auto !important;
 }
 
 /*-------Navigation-------*/
